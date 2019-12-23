@@ -1,7 +1,15 @@
 # dtimer
 
-small timer i use for counting down days to complete tasks
+[dl link](https://github.com/macromaniac/dtimer/raw/master/dtimer.exe)
 
-syntax is eg ".\dtimer.exe 2" to countdown 2 days, can do ".\dtimer.exe 'do laundry' 2" to set a timer with a goal, or ".\dtimer.exe" to recall the last used timer
 
-you can put the exe in the startup dir (run command-> shell:startup ->enter) if you want to be reminded everytime you log into your computer of some task
+small windows timer i use for counting down days to complete tasks.
+`.\dtimer.exe 5` will give you a 5 day countdown
+
+`.\dtimer.exe 'do laundry' 5` would give you 5 days to do laundry (should be plenty):
+
+![GitHub Logo](example1.PNG)
+
+The timer saves data, so running `.\dtimer.exe` without arguments restores the last used timer.
+
+You can put the exe in your `shell:startup` folder if you want to be reminded when you login to windows
