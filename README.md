@@ -13,3 +13,5 @@ small windows timer i use for counting down days to complete tasks.
 The timer saves data, so running `.\dtimer.exe` without arguments restores the last used timer.
 
 You can put the exe in your `shell:startup` folder if you want to be reminded when you login to windows
+
+I like to put it into the run folder (hit run command, winkey+r->alt+b, paste exe into there), that way you can call it via run  (winkey+r->`dtimer "do laundry" 5`)
