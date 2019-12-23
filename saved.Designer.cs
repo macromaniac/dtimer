@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace dtimer {
+namespace DTimer {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

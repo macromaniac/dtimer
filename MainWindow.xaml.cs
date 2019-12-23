@@ -1,5 +1,4 @@
-﻿using dtimer;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Threading;
