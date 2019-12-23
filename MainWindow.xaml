@@ -1,0 +1,19 @@
+﻿<Window x:Class="DTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DTimer"
+        mc:Ignorable="d"
+        Title="{Binding WindowName,FallbackValue=''}" Height="300" Width="300">
+    <Grid>
+        <TextBlock FontFamily="Ubuntu" 
+                   FontWeight="Bold" 
+                   FontSize="{Binding TimerFontSize}"
+                   Text="{Binding TimerText, FallbackValue='blah'}"
+                   Foreground="{Binding TimerTextColor, FallbackValue='black'}"
+                   ToolTip="{Binding TooltipText, FallbackValue=''}"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"></TextBlock>
+    </Grid>
+</Window>
