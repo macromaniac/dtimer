@@ -11,16 +11,20 @@ namespace DTimer
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            //the exe.config stores our default settings, we want our app to work
-            //if the exe.config doesn't exist so we do a try catch here
-            try
+            if (e.Args.Length == 0)
             {
-                var endTime = saved.Default.GoalEndTime;
-            }catch (NullReferenceException)
-            {
-                string settingsLocation = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath;
-                MessageBox.Show("dtimer.exe requires a time to be set, no save data found in " + settingsLocation);
-                Current.Shutdown();
+                //the exe.config stores our default settings, we want our app to work
+                //if the exe.config doesn't exist so we do a try catch here
+                try
+                {
+                    var endTime = saved.Default.GoalEndTime;
+                }
+                catch (NullReferenceException)
+                {
+                    string settingsLocation = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath;
+                    MessageBox.Show("dtimer.exe requires a time to be set, no save data found in " + settingsLocation);
+                    Current.Shutdown();
+                }
             }
 
             if (e.Args.Length == 1)
