@@ -21,4 +21,4 @@ pasting this into the run command should be all you need to do:
 
 `powershell -c "cd $home; wget https://github.com/macromaniac/dtimer/raw/master/dtimer.exe -outfile dtimer.exe;pause"`
 
-alternatively, [dl manually](https://github.com/macromaniac/dtimer/raw/master/dtimer.exe) and paste the exe into %HOMEPATH% (eg C:\Users\/your username/)
+alternatively, [dl manually](https://github.com/macromaniac/dtimer/raw/master/dtimer.exe) and paste the exe into %HOMEPATH% (eg C:\Users\\(your username))
