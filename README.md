@@ -1,17 +1,21 @@
 # dtimer
 
-[dl link](https://github.com/macromaniac/dtimer/raw/master/dtimer.exe)
+“To achieve great things, two things are needed; a plan, and not quite enough time.” – Leonard Bernstein
 
 
-small windows timer i use for counting down days to complete tasks.
-`.\dtimer.exe 5` will give you a 5 day countdown
+Small windows timer used for counting down days to complete tasks.
+run command (windowskey+r) and type `dtimer 5` to get a 5 day countdown
 
-`.\dtimer.exe 'do laundry' 5` would give you 5 days to do laundry (should be plenty):
+`dtimer "do laundry" 5` would give you 5 days to do laundry (should be plenty)
 
-![GitHub Logo](example1.PNG)
+![dtimer "do laundry" 5](src/example1.PNG)
 
-The timer saves data, so running `.\dtimer.exe` without arguments restores the last used timer.
+The timer saves data, so running `dtimer` without arguments restores the last used timer if it exists
 
-You can put the exe in your `shell:startup` folder if you want to be reminded when you login to windows
+I typically put it on my second desktop (windowskey+tab, desktop 2) and leave the window open, as i dislike having lots of windows open on my work screen
 
-I like to put it into the run folder (hit run command, winkey+r->alt+b, paste exe into there), that way you can call it via run  (winkey+r->`dtimer "do laundry" 5`)
+to install:
+paste this into the run command (hotkey is windowskey+r):
+`powershell -c "cd $home; wget https://github.com/macromaniac/dtimer/raw/master/dtimer.exe -outfile dtimer.exe;pause"`
+
+alternatively, [dl manually](https://github.com/macromaniac/dtimer/raw/master/dtimer.exe) and paste the folder into %HOMEPATH% (eg C:\Users\/your username/)
