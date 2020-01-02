@@ -7,13 +7,14 @@
         mc:Ignorable="d"
         Title="{Binding WindowName,FallbackValue=''}" Height="300" Width="300">
     <Grid>
-        <TextBlock FontFamily="Ubuntu" 
+        <Viewbox Stretch="Uniform">
+            <TextBlock FontFamily="Ubuntu" 
                    FontWeight="Bold" 
-                   FontSize="{Binding TimerFontSize}"
                    Text="{Binding TimerText, FallbackValue='blah'}"
                    Foreground="{Binding TimerTextColor, FallbackValue='black'}"
                    ToolTip="{Binding TooltipText, FallbackValue=''}"
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center"></TextBlock>
+        </Viewbox>
     </Grid>
 </Window>

@@ -29,7 +29,8 @@ namespace DTimer
 
             if (e.Args.Length == 1)
             {
-                saved.Default.GoalEndTime = DateTime.Now.AddDays(double.Parse(e.Args[0]));
+                //always end at 12 the next day, we do this by flooring to the current date
+                saved.Default.GoalEndTime = DateTime.Now.Date.AddDays(double.Parse(e.Args[0]) + 1);
                 saved.Default.Save();
                 return;
             }
@@ -37,7 +38,8 @@ namespace DTimer
             if (e.Args.Length == 2)
             {
                 saved.Default.GoalMessage = e.Args[0];
-                saved.Default.GoalEndTime = DateTime.Now.AddDays(double.Parse(e.Args[1]));
+                //always end at 12 the next day, we do this by flooring to the the current date
+                saved.Default.GoalEndTime = DateTime.Now.Date.AddDays(double.Parse(e.Args[0]) + 1);
                 saved.Default.Save();
             }
         }
