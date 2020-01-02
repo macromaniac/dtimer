@@ -15,8 +15,9 @@ The timer saves data, so running `dtimer` without arguments restores the last us
 
 I typically put it on my second desktop (windowskey+tab, desktop 2) and leave the window open, as i dislike having lots of windows open on my work screen
 
-to install:
-paste this into the run command (hotkey is windowskey+r):
+### installation ###
+
+pasting this into the run command should be all you need to do:
 
 `powershell -c "cd $home; wget https://github.com/macromaniac/dtimer/raw/master/dtimer.exe -outfile dtimer.exe;pause"`
 
