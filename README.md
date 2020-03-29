@@ -1,9 +1,7 @@
-# dtimer
-
-> “To achieve great things, two things are needed: a plan, and not quite enough time.” – Leonard Bernstein
+#### To achieve great things, two things are needed: a plan, and not quite enough time. – Leonard Bernstein
 
 
-Small windows timer I use for counting down days to complete tasks.
+Personal offline day timer I use for completing tasks.
 
 highlight the script below (triple click) and copy it, then paste it into the run command (winkey+r) to install:
 
