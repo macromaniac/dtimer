@@ -5,11 +5,11 @@
 
 Small windows timer I use for counting down days to complete tasks.
 
-triple click the below text then copy and paste this into run command (winkey+r) to install:
+highlight the script below (triple click) and copy it, then paste it into the run command (winkey+r) to install:
 
 `powershell -c "cd $home; wget https://github.com/macromaniac/dtimer/raw/master/dtimer.exe -outfile dtimer.exe;pause"`
 
-now you can run command (windowskey+r) and type `dtimer 5` to get a 5 day countdown
+now you can run command and type `dtimer 5` to get a 5 day countdown
 
 `dtimer "do laundry" 5` would give you 5 days to do laundry (should be plenty)
 
