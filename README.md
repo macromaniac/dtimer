@@ -1,6 +1,6 @@
 # dtimer
 
-“To achieve great things, two things are needed: a plan, and not quite enough time.” – Leonard Bernstein
+> “To achieve great things, two things are needed: a plan, and not quite enough time.” – Leonard Bernstein
 
 
 Small windows timer I use for counting down days to complete tasks.
